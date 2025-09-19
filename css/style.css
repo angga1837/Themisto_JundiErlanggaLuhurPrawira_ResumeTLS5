@@ -203,7 +203,7 @@ a{
     font-style: normal;
     font-size: 24px;
     text-align: justify;
-    box-shadow: 0px 0px 45px black;
+    box-shadow: 0px 0px 45px #000000;
 }
 .orasi>.orasi-gambardanteks>.orasi-dan-button{
     vertical-align: middle;
@@ -244,7 +244,7 @@ a{
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    box-shadow: 0px 0px 45px black;
+    box-shadow: 0px 0px 45px #000000;
 }
 .gambartitle{
     display: flex;
@@ -280,7 +280,7 @@ a{
     font-style: normal;
     color: #F3F7EB;
     margin-bottom: 100px;
-    box-shadow: 0px 0px 45px black;
+    box-shadow: 0px 0px 45px #000000;
     
 }
 
@@ -410,5 +410,6 @@ a{
 #tentang>#title-tentang{
     font-size: 24px;
 }
+
 
 
