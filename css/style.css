@@ -8,7 +8,9 @@
     font-weight: normal;
     font-style: normal;
   }
-
+html {
+  scroll-behavior: smooth;
+}
 .website{
     background: linear-gradient(#1E461B, #071409);
     padding: 0;
@@ -405,3 +407,4 @@ a{
 #tentang>#title-tentang{
     font-size: 24px;
 }
+
