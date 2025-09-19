@@ -304,7 +304,7 @@ a{
     height: auto;
     border-radius: 60px;
     border: solid 8px #F3F7EB;
-    box-shadow: 0px 0px 45px #000000;
+   
 }
 .event-event>.divisi-event{
     margin-top: 70px;
@@ -411,6 +411,7 @@ a{
 #tentang>#title-tentang{
     font-size: 24px;
 }
+
 
 
 
