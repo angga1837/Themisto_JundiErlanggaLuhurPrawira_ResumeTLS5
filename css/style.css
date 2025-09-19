@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@font-face {
+    font-family: 'Nico Moji';
+    src: url('/font/AnyConv.com__NicoMoji-Regular.woff2') format('woff2'),
+         url('/fonts/NicoMoji-Regular.woff') format('woff'),
+         url('/fonts/NicoMoji-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.website{
+    background: linear-gradient(#1E461B, #071409);
+    padding: 0;
+    margin: 0;
+}
+.navigasi{
+    background-color:#1E461B;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: solid 2px black;
+    z-index: 2;
+
+
+}
+.navigasi-menu{
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    
+}
+.navigasi-button{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 10px 7px 10px 7px;
+    cursor: pointer;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+#logo{
+    margin-right: auto;
+    height: 60px;
+    width:fit-content;
+    display: block;
+}
+.isi{
+
+}
+
+.popup{
+    width: 450px;
+    height: 500px;
+    background-color: #0F1C14;
+    border-radius: 35px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: 0 20px 0px 20px;
+    transform: translate(-50%, -50%) scale(0.1);
+    z-index: 3;
+    align-content: center;
+    vertical-align: middle;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F3F7EB;
+    border: 8px solid #F3F7EB;
+}
+.popup-visible{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup>h1{
+    font-size: 40px;
+}
+.popup>p{
+    font-size: 16px;
+    text-align: justify;
+}
+.popup>button{
+    background-color: rgb(144, 33, 33);
+    padding: 5% 9%;
+    cursor: pointer;
+    border-radius: 25px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F3F7EB;
+}
+
+
+
+
+
+.home{
+    margin-bottom: 200px;
+}
+.home-gambar{
+    position: relative;
+    display: inline-block;
+}
+.home-gambar::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+    
+}
+#home-gambar{
+    width:100%;
+    display: block;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    
+}
+.home-title{
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%, -50%); 
+    font-family: 'Nico Moji', sans-serif;
+}
+.home-title>#title{
+    font-size: 148px;
+    white-space: nowrap;
+    -webkit-text-stroke: 8px #F3F7EB;
+    background: linear-gradient(#1E461B, #071409);
+    -webkit-background-clip: text;   /* clip background to text */
+    -webkit-text-fill-color: transparent; /* make text itself transparent */
+    
+}
+.home-title>#subtitle{
+    font-size: 64px;
+    color: #F3F7EB;
+}
+.pengenalancatatls{
+    margin: 130px 130px 130px 130px;
+    color: #F3F7EB;
+}
+.pengenalancatatls>#apaitucatatls{
+    font-size: 75px;
+    margin: 50px 0px;
+    font-family: 'Nico Moji', sans-serif;
+}
+.pengenalancatatls>#penjelasancatatls{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: justify;
+}
+.titlebagan{
+    font-family: 'Nico Moji', sans-serif;
+    color: #F3F7EB;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.orasi{
+    align-items: center;
+    align-content: center;
+    margin: 200px 100px 200px 100px;
+}
+.orasi>.orasi-gambardanteks{
+    border-radius: 60px;
+    background-color: #F3F7EB;
+    padding: 50px;
+    display: flex;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: justify;
+}
+.orasi>.orasi-gambardanteks>.orasi-dan-button{
+    vertical-align: middle;
+    align-self: center;
+    padding: 0px 20px 0px 20px;
+}
+.orasi>.orasi-gambardanteks>.orasi-dan-button>#calonkpu{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+.orasi>.orasi-gambardanteks>.orasi-gambar>.gambarcalon{
+    border-radius: 60px;
+    width: 450px;
+    height: auto;
+}
+.orasi-dan-button>span{
+    background-color: #1E461B;
+    color: #F3F7EB;
+    border-radius: 80px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+    
+
+}
+
+.materiinti{
+
+    margin: 200px 100px 130px 100px;
+
+    border-radius: 60px;
+}
+.materi{
+    background-color: #F3F7EB;
+    border-radius: 60px;
+    margin: 50px 0px 50px 0px;
+    padding: 50px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.gambartitle{
+    display: flex;
+    margin-bottom: 50px;
+}
+.gambarmateri{
+    border-radius: 60px;
+    width: 550px;
+    height: auto;
+}
+.titlemateri{
+    align-content: center;
+    align-self: center;
+    margin: auto;    
+}
+.titlemateri>.title{
+    font-size: 85px;
+}
+.titlemateri>.subtitle{
+    font-size: 50px;
+}
+.teksmateri{
+    font-size: 24px;
+    text-align: justify;
+}
+
+.event{
+    margin: 130px 130px 130px 130px;
+}
+.event>.event-event{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F3F7EB;
+    margin-bottom: 100px;
+    
+}
+
+.gambar-teks-event{
+    display: flex;
+}
+.gambar-teks-event>.title-pepenjelasan-event{
+    align-content: center;
+    align-items: center;
+    margin: 0px 25px 0px 25px;
+}
+.gambar-teks-event>.title-pepenjelasan-event>.title-event{
+    font-size: 68px;
+}
+.gambar-teks-event>.title-pepenjelasan-event>.penjelasan-event{
+    font-size: 24px;
+    text-align: justify;
+}
+.gambar-event{
+    width: 450px;
+    height: auto;
+    border-radius: 60px;
+    border: solid 8px #F3F7EB;
+}
+.event-event>.divisi-event{
+    margin-top: 70px;
+}
+.divisi-event>.title-divisi{
+    font-size: 68px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.divisi-event>.divisi{
+    display: flex;
+    flex-direction: column;
+}
+.divisi>.row{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 35px;
+    
+}
+.row>.row1-divisi{
+    margin: 0px 60px 0px 60px;
+    font-size: 32px;
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+    border: solid 10px #F3F7EB;
+    background-color: #1E461B;
+    width: 280px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.row>.row2-divisi{
+    margin: 0px 60px 0px 60px;
+    font-size: 32px;
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+    border: solid 10px #F3F7EB;
+    background-color: #263725;
+    width: 280px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.row>.row3-divisi{
+    margin: 0px 60px 0px 60px;
+    font-size: 32px;
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+    border: solid 10px #F3F7EB;
+    background-color: #071409;
+    width: 280px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.row>.row4-divisi{
+    margin: 0px 60px 0px 60px;
+    font-size: 32px;
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+    border: solid 10px #F3F7EB;
+    background-color: #0F1C14;
+    width: 280px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.row>.row5-divisi{
+    margin: 0px 60px 0px 60px;
+    font-size: 32px;
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+    border: solid 10px #F3F7EB;
+    background-color: #0F1C14;
+    width: 280px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#tentang{
+    margin: 300px 50px 20px 50px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #F3F7EB;
+    text-align: center;
+}
+#tentang>#title-tentang{
+    font-size: 24px;
+}
